@@ -8,10 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        openSans: ["OpenSans", "sans-serif"],
+        josefinSans: ["JosefinSans", "sans-serif"],
+      },
+      boxShadow: {
+        custom:
+          "-3.828px -3.828px 6px 0px rgba(255, 200, 39, 0.4), 3px 5px 8px 0px rgba(255, 82, 1, 0.2)",
+        "custom-hover":
+          "-5px -5px 20px rgba(255, 200, 39, 0.6), 3px 5px 20px rgba(255, 82, 1, 0.2)",
+      },
+      colors: {
+        "hover-yellow": "#FFC827", // Custom hover yellow
+        "button-text": "#1f1f23", // Custom button text color on hover
       },
     },
   },
